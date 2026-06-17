@@ -17,7 +17,7 @@ const stats = [
     ),
     value: "$28B",
     label: "Serviceable Market Opportunity",
-    sub: "Global hiring, compliance & payroll for high-growth companies",
+    sub: "Global hiring, compliance, and payroll for high-growth companies",
   },
   {
     icon: (
@@ -26,8 +26,8 @@ const stats = [
       </svg>
     ),
     value: "The Wedge",
-    // label: "Our Market Entry",
-    sub: "Global talent access for companies that can't attract talent on brand alone",
+    label: "Our Market Entry",
+    sub: "Global talent access for companies that cannot compete on employer brand alone. The wedge is hiring. The opportunity is workforce infrastructure.",
   },
   {
     icon: (
@@ -36,7 +36,7 @@ const stats = [
       </svg>
     ),
     value: "Our Vision",
-    // label: "Long-term Goal",
+    label: "Long-term Goal",
     sub: "The unified operating system for global workforce management",
   },
 ];
@@ -50,8 +50,8 @@ export default function StatsSection() {
             <div key={s.value} className="text-white flex gap-3">
               <div className="mb-3">{s.icon}</div>
               <div>
-              <p className="text-3xl font-bold text-white mb-1">{s.value}</p>
-              <p className="text-white font-semibold text-sm mb-2">{s.label}</p>
+              <p className="text-3xl font-bold font-mono text-white mb-1">{s.value}</p>
+              <p className="text-white font-semibold font-mono text-sm mb-2">{s.label}</p>
               <p className="text-blue-200 text-sm leading-relaxed">{s.sub}</p>
               </div>
             </div>

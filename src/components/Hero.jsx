@@ -2,13 +2,13 @@ export default function Hero({ onBooking, onSubscribe }) {
   return (
     <section className="bg-white py-12 lg:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
           {/* Left column */}
           <div>
             <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4">
               Invest in Utiva
             </p>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl lg:text-[45px] font-mono font-semibold text-gray-900 leading-tight mb-6">
               Building the{" "}
               <br />
               <span className="text-primary">Talent Infrastructure</span>
@@ -16,12 +16,12 @@ export default function Hero({ onBooking, onSubscribe }) {
               for the World of Work
             </h1>
             <p className="text-gray-500 text-lg mb-6 max-w-[500px] leading-relaxed">
-              We help high-growth companies hire, pay, and manage global
-              talent—compliantly, quickly, and at scale.
+              Utiva is the AI-powered workforce operating system that helps high-growth companies discover, hire,
+              manage, and pay exceptional global professionals—compliantly, quickly, and at scale.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
-              {["Global Talent Access", "Compliant & Localized", "Payroll & Payments"].map((item) => (
+              {["Global Talent Access", "Compliant Hiring", "Payroll & Workforce Operations"].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
                   <span className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

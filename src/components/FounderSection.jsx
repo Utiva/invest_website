@@ -7,12 +7,13 @@ export default function FounderSection({ onVideo }) {
             <p className="text-secondary font-semibold text-xs uppercase tracking-widest mb-4">
               From the Founder
             </p>
-            <h2 className="text-3xl lg:text-4xl md:max-w-[400px] font-bold text-white mb-5 leading-tight">
-              Our Pitch at Techstars
+            <h2 className="text-3xl lg:text-4xl font-mono md:max-w-[400px] font-bold text-white mb-5 leading-tight">
+              Watch Our Techstars Pitch
             </h2>
             <p className="text-blue-200 max-w-[400px] text-base leading-relaxed mb-8">
-              Watch our founder, Niyi, pitch Utiva at Techstars and share the vision
-              behind building the future of global work.
+              Hear directly from our founder as he shares the vision behind building the
+              infrastructure layer for global hiring and why the future of work belongs to
+              companies that can access exceptional people from anywhere.
             </p>
             <button
               onClick={onVideo}

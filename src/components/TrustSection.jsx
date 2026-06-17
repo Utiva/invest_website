@@ -1,8 +1,8 @@
 const metrics = [
-  { value: "10,000+", label: "Global Talent onboarded" },
-  { value: "300+", label: "Companies served" },
-  { value: "120+", label: "Countries represented" },
-  { value: "98%", label: "Talent retention rate" },
+  { value: "20,000+", label: "Professionals onboarded" },
+  { value: "150+", label: "Companies served" },
+  { value: "39+", label: "Countries supported" },
+  { value: "96%", label: "Customer retention" },
 ];
 
 export default function TrustSection() {
@@ -19,7 +19,7 @@ export default function TrustSection() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 flex-1">
               {metrics.map((m) => (
                 <div key={m.value}>
-                  <p className="text-3xl lg:text-4xl font-extrabold text-primary mb-1">{m.value}</p>
+                  <p className="text-3xl  lg:text-4xl font-extrabold text-primary mb-1">{m.value}</p>
                   <p className="text-gray-500 text-sm leading-snug">{m.label}</p>
                 </div>
               ))}
