@@ -1,0 +1,51 @@
+name: Deploy invest_website to cPanel
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Checkout code
+        uses: actions/checkout@v4
+
+      - name: ⎔ Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.3
+          cache: npm
+
+      - name: 🔨 Install dependencies
+        run: npm ci
+
+      - name: 📦 Build project
+        run: npm run build
+
+      - name: 🗂️ Stage deploy artifacts
+        run: |
+          rm -rf deploy
+          mkdir -p deploy/tmp
+          cp -r dist deploy/dist
+          cp server.js package.json package-lock.json deploy/
+          echo "deployed ${GITHUB_SHA} at $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > deploy/tmp/restart.txt
+
+      - name: 🚀 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: ./deploy/
+          server-dir: /invest/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
