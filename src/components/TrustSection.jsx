@@ -1,14 +1,7 @@
+import halcyon from "../assets/Halcyon-Logo-Stacked-BlackCyan (1).png";
 import techstars from "../assets/unnamed (49).png";
 import mitSolve from "../assets/unnamed (50).png";
 import techNation from "../assets/unnamed (52).png";
-import halcyon from "../assets/Halcyon-Logo-Stacked-BlackCyan (1).png";
-
-const metrics = [
-  { value: "20,000+", label: "Professionals onboarded" },
-  { value: "150+", label: "Companies served" },
-  { value: "39+", label: "Countries supported" },
-  { value: "96%", label: "Customer retention" },
-];
 
 const partners = [
   { src: techstars, alt: "Techstars" },
@@ -19,38 +12,21 @@ const partners = [
 
 export default function TrustSection() {
   return (
-    <section className="pt-10" id="traction">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="border border-gray-100 bg-sky-50 rounded-2xl shadow-sm px-8 py-8">
-          <p className="text-center text-primary font-bold text-xs uppercase tracking-widest mb-8">
-            Trusted by high-growth companies and global talent
-          </p>
+    <section className="pt-16 lg:pt-20 xl:pt-24 pb-8" id="traction">
+      <div className="container mx-auto px-4 w-full lg:w-11/12 xl:w-10/12">
+        <p className="text-center text-black font-bold text-xs uppercase tracking-widest mb-10 lg:mb-12">
+          Trusted by high-growth companies and global talent
+        </p>
 
-          <div className="flex flex-col lg:flex-row items-center gap-10">
-            {/* Stats */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 flex-1">
-              {metrics.map((m) => (
-                <div key={m.value}>
-                  <p className="text-3xl lg:text-4xl font-extrabold text-primary mb-1">{m.value}</p>
-                  <p className="text-gray-500 text-sm leading-snug">{m.label}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="hidden lg:block w-px self-stretch bg-gray-200 mx-4" />
-
-            {/* Logos */}
-            <div className="grid grid-cols-2 gap-x-8 gap-y-6 items-center">
-              {partners.map((p) => (
-                <img
-                  key={p.alt}
-                  src={p.src}
-                  alt={p.alt}
-                  className="h-16 w-auto object-contain"
-                />
-              ))}
-            </div>
-          </div>
+        <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+          {partners.map((p) => (
+            <img
+              key={p.alt}
+              src={p.src}
+              alt={p.alt}
+              className="h-16 w-auto object-contain"
+            />
+          ))}
         </div>
       </div>
     </section>

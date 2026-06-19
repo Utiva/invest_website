@@ -1,13 +1,14 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import StatsSection from "./components/StatsSection";
-import TrustSection from "./components/TrustSection";
-import FounderSection from "./components/FounderSection";
+import AccelerateSection from "./components/AccelerateSection";
+import BookingModal from "./components/BookingModal";
 import CTABanner from "./components/CTABanner";
 import Footer from "./components/Footer";
-import BookingModal from "./components/BookingModal";
+import FounderSection from "./components/FounderSection";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import StatsSection from "./components/StatsSection";
 import SubscribeModal from "./components/SubscribeModal";
+import TrustSection from "./components/TrustSection";
 import VideoModal from "./components/VideoModal";
 
 export default function App() {
@@ -19,11 +20,16 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <Hero onBooking={() => setModal("booking")} onSubscribe={() => setModal("subscribe")} />
-        <StatsSection />
+        <Hero
+          onBooking={() => setModal("booking")}
+          onSubscribe={() => setModal("subscribe")}
+          onVideo={() => setModal("video")}
+        />
         <TrustSection />
+        <StatsSection />
         <FounderSection onVideo={() => setModal("video")} />
         <CTABanner onSubscribe={() => setModal("subscribe")} />
+        <AccelerateSection />
       </main>
       <Footer onSubscribe={() => setModal("subscribe")} />
 

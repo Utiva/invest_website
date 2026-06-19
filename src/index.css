@@ -127,3 +127,21 @@ body {
   height: 100%;
   border: 0;
 }
+
+.home-accelerate-section {
+    background: #000269;
+    backdrop-filter: blur(4px);
+}
+
+.hire-card {
+    border: 1px solid #ebf4ff;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+}
+
+.home-header {
+    background: linear-gradient(114.54deg,
+            rgba(255, 255, 255, 0.5) 16.01%,
+            rgba(244, 244, 226, 0.5) 48.74%,
+            rgba(240, 245, 255, 0.5) 89.98%);
+    backdrop-filter: blur(4px);
+}

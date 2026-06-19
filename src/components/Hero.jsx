@@ -1,10 +1,12 @@
-export default function Hero({ onBooking, onSubscribe }) {
+import PitchImage from "../assets/images/png/home/eyi.webp";
+
+export default function Hero({ onBooking, onSubscribe, onVideo }) {
   return (
-    <section className="bg-white py-12 lg:py-20 overflow-hidden">
+    <section className="home-header pt-32 lg:pt-40 pb-16 lg:pb-20 xl:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-6 items-center">
-          {/* Left column */}
-          <div>
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          {/* Left column — Copy */}
+          <div className="order-2 lg:order-1">
             <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4">
               Invest in Utiva
             </p>
@@ -15,7 +17,7 @@ export default function Hero({ onBooking, onSubscribe }) {
               <br />
               for the World of Work
             </h1>
-            <p className="text-gray-500 text-lg mb-6 max-w-[500px] leading-relaxed">
+            <p className="text-gray-900 text-lg mb-6 max-w-[500px] leading-relaxed">
               Utiva is the AI-powered workforce operating system that helps high-growth companies discover, hire,
               manage, and pay exceptional global professionals—compliantly, quickly, and at scale.
             </p>
@@ -96,17 +98,39 @@ export default function Hero({ onBooking, onSubscribe }) {
             </div>
           </div>
 
-          {/* Right column — Pitch video */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-              <iframe
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-                src="https://www.youtube.com/embed/sm4mhkJq5TE?si=q7TwTSKfoxih2uHU"
-                title="Utiva Pitch at Techstars"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+                    {/* Right column — Pitch video */}
+                    <div className="relative flex justify-center order-2">
+            <button
+              type="button"
+              onClick={onVideo}
+              className="group relative block w-full max-w-md aspect-[4/5] overflow-hidden shadow-2xl"
+              style={{ borderRadius: "2.5rem 2.5rem 45% 45%" }}
+            >
+              <img
+                src={PitchImage}
+                alt="Utiva Pitch at Techstars"
+                className="w-full h-full object-cover"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
+
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-28 text-white">
+                <p className="text-2xl lg:text-3xl font-mono font-bold leading-tight">
+                  Utiva
+                  <br />
+                  at Techstars
+                </p>
+              </div>
+
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+                <div className="w-16 h-16 rounded-full p-[3px] bg-gradient-to-br from-[#03CF74] to-secondary shadow-lg group-hover:scale-110 transition-transform">
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                    <svg className="w-6 h-6 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
