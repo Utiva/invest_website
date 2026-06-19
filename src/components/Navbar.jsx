@@ -10,11 +10,11 @@ const navLinks = [
   { label: "Team", href: "#team" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onSubscribe }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-white border-b border-gray-30 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
@@ -26,7 +26,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-600 hover:text-primary text-sm font-medium transition-colors"
+                className="text-gray hover:text-primary text-sm font-medium transition-colors"
               >
                 {link.label}
               </a>
@@ -34,16 +34,16 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <a
-              href="#invest"
-              className="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-dark transition-colors"
+            <button
+              onClick={onSubscribe}
+              className="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
             >
               Invest With Us
-            </a>
+            </button>
           </div>
 
           <button
-            className="lg:hidden p-2 rounded-md text-gray-600"
+            className="lg:hidden p-2 rounded-md text-gray"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? (
@@ -64,18 +64,18 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="block py-2 text-gray-600 hover:text-primary text-sm font-medium"
+                className="block py-2 text-gray hover:text-primary text-sm font-medium"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href="#invest"
-              className="mt-2 inline-block bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold"
+               <button
+              onClick={onSubscribe}
+              className="mt-3 inline-block bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold"
             >
               Invest With Us
-            </a>
+            </button>
           </div>
         )}
       </div>

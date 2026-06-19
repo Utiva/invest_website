@@ -1,8 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Matter font */
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/matter/Matter-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/matter/Matter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/matter/Matter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/matter/Matter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Matter';
+  src: url('./assets/fonts/matter/Matter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TT Firs Neue font */
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/fonts/neue/TTFirsNeue-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: #050794;
+  --color-primary-2: #0C0E83;
+  --color-secondary: #FBAF1B;
+  --color-default: #1E2027;
+  --color-light-blue: #EEF2FF;
+  --color-gray-30: #D1D5DB;
+  --color-gray-2: #F9FAFB;
+  --color-primary-light: #EEF2FF;
+  --color-primary-light-2: #E0E7FF;
+  --color-secondary-light: #FEF9C3;
+  --color-blue-2: #1D4ED8;
+  --color-sky-blue: #E0F2FE;
+  --color-utiva-green: #10B981;
+  --color-deep-blue: #000269;
+}
 
 * {
   box-sizing: border-box;
@@ -10,7 +120,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Matter', system-ui, sans-serif;
   color: #1E2027;
   background: #fff;
   -webkit-font-smoothing: antialiased;

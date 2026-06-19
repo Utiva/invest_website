@@ -1,16 +1,16 @@
 export default function FounderSection({ onVideo }) {
   return (
-    <section className="py-16 " id="about">
+    <section className="py-16" id="about">
       <div className="max-w-7xl bg-primary rounded-2xl py-5 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-secondary font-semibold text-xs uppercase tracking-widest mb-4">
               From the Founder
             </p>
-            <h2 className="text-3xl lg:text-4xl font-mono md:max-w-[400px] font-bold text-white mb-5 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-mono font-bold text-white mb-5 leading-tight">
               Watch Our Techstars Pitch
             </h2>
-            <p className="text-blue-200 max-w-[400px] text-base leading-relaxed mb-8">
+            <p className="text-blue-200 max-w-[490px] text-base leading-relaxed mb-8">
               Hear directly from our founder as he shares the vision behind building the
               infrastructure layer for global hiring and why the future of work belongs to
               companies that can access exceptional people from anywhere.
@@ -19,10 +19,7 @@ export default function FounderSection({ onVideo }) {
               onClick={onVideo}
               className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors text-sm"
             >
-              Watch the Pitch
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              ▶ Watch the Pitch
             </button>
           </div>
 

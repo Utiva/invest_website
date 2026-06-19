@@ -8,23 +8,22 @@ export default function Hero({ onBooking, onSubscribe }) {
             <p className="text-secondary font-semibold text-sm uppercase tracking-widest mb-4">
               Invest in Utiva
             </p>
-            <h1 className="text-4xl lg:text-[45px] font-mono font-semibold text-gray-900 leading-tight mb-6">
+            <h1 className="text-3xl lg:text-[45px] font-mono font-semibold text-gray-900 lg:leading-[1.1] mb-4 lg:mb-6">
               Building the{" "}
               <br />
               <span className="text-primary">Talent Infrastructure</span>
               <br />
               for the World of Work
             </h1>
-            <p className="text-gray-500 text-lg mb-6 max-w-[500px] leading-relaxed">
-              Utiva is the AI-powered workforce operating system that helps high-growth companies discover, hire,
-              manage, and pay exceptional global professionals—compliantly, quickly, and at scale.
+            <p className="text-gray-500  lg:text-lg mb-6 max-w-[500px] leading-relaxed">
+              Utiva is a global hiring operating system that helps high-growth companies access, hire, and pay vetted international talent in one platform. We own the talent supply — 20,000+ verified professionals across 39 countries — and handle compliant payroll in 120+ countries.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
               {["Global Talent Access", "Compliant Hiring", "Payroll & Workforce Operations"].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-gray-700 text-sm font-medium">
-                  <span className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span className="lg:w-5 lg:h-5 w-4 h-4 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <svg className="lg:w-3 lg:h-3 w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
@@ -47,7 +46,7 @@ export default function Hero({ onBooking, onSubscribe }) {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">Download</p>
-                  <p className="text-sm font-bold text-gray-900 leading-tight">
+                  <p className="lf:text-sm font-bold text-gray-900 leading-tight">
                     Pitch Deck
                     <span className="ml-1 text-primary group-hover:translate-x-0.5 inline-block transition-transform">→</span>
                   </p>

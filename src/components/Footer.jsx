@@ -24,7 +24,7 @@ const columns = [
 
 export default function Footer({ onSubscribe }) {
   return (
-    <footer className="bg-primary-dark text-white">
+    <footer className="bg-deep-blue text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           <div className="lg:col-span-1">

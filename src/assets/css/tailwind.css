@@ -1,0 +1,130 @@
+@import "./main.css";
+
+/* TempOwn Default Settings */
+
+:root {
+    /*Default  Color */
+    --color-primary: #050794;
+    --color-primary-2: #000269;
+
+    --color-secondary: #FBAF1B;
+
+    --color-default: #1E2027;
+
+    --color-light-blue: #7FAEF4;
+
+    --color-gray-30: #FCFCFC;
+
+    --color-gray: #565656;
+    --color-gray-2: #979797;
+
+    --color-primary-light: #E2ECF9;
+    --color-primary-light-2: #A29EEB;
+
+    --color-secondary-light: rgba(255, 175, 0, 0.04);
+
+    --color-blue: #0003EC;
+    --color-blue-2: #0003A9;
+
+    --color-utiva-green: #10A662;
+    --color-sky-blue: #00A2F3;
+
+    --color-deep-blue: #0C0E83
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-Regular.ttf");
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-Thin.ttf");
+        font-weight: 100;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-Light.ttf");
+        font-weight: 300;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-Medium.ttf");
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-DemiBold.ttf");
+        font-weight: 600;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-Bold.ttf");
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-Black.ttf");
+        font-weight: 800;
+    }
+
+    @font-face {
+        font-family: TT Firs Neue;
+        src: url("../fonts/neue/TTFirsNeue-ExtraBold.ttf");
+        font-weight: 900;
+    }
+
+    @font-face {
+        font-family: Matter;
+        src: url("../fonts/matter/Matter-Light.ttf");
+        font-weight: 300;
+    }
+
+    @font-face {
+        font-family: Matter;
+        src: url("../fonts/matter/Matter-Regular.ttf");
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: Matter;
+        src: url("../fonts/matter/Matter-Medium.ttf");
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: Matter;
+        src: url("../fonts/matter/Matter-SemiBold.ttf");
+        font-weight: 600;
+    }
+
+    @font-face {
+        font-family: Matter;
+        src: url("../fonts/matter/Matter-Bold.ttf");
+        font-weight: 700;
+    }
+
+}
+
+@layer utilities {
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+            scrollbar-width: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+}
