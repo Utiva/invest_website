@@ -1,8 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-Regular.ttf");
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-Thin.ttf");
+      font-weight: 100;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-Light.ttf");
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-Medium.ttf");
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-DemiBold.ttf");
+      font-weight: 600;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-Bold.ttf");
+      font-weight: 700;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-Black.ttf");
+      font-weight: 800;
+  }
+
+  @font-face {
+      font-family: TT Firs Neue;
+      src: url("./assets/fonts/neue/TTFirsNeue-ExtraBold.ttf");
+      font-weight: 900;
+  }
+
+  @font-face {
+      font-family: Matter;
+      src: url("./assets/fonts/matter/Matter-Light.ttf");
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: Matter;
+      src: url("./assets/fonts/matter/Matter-Regular.ttf");
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: Matter;
+      src: url("./assets/fonts/matter/Matter-Medium.ttf");
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: Matter;
+      src: url("./assets/fonts/matter/Matter-SemiBold.ttf");
+      font-weight: 600;
+  }
+
+  @font-face {
+      font-family: Matter;
+      src: url("./assets/fonts/matter/Matter-Bold.ttf");
+      font-weight: 700;
+  }
+
+}
+
+@layer utilities {
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+          scrollbar-width: none;
+      }
+
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+}
 
 * {
   box-sizing: border-box;
@@ -10,7 +102,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Matter', system-ui, sans-serif;
   color: #1E2027;
   background: #fff;
   -webkit-font-smoothing: antialiased;
