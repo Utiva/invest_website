@@ -1,3 +1,6 @@
+import PitchImage from "../assets/images/png/home/pitch.webp";
+
+
 export default function FounderSection({ onVideo }) {
   return (
     <section className="py-20 lg:py-28 bg-[#FBFBE6]" id="about">
@@ -19,20 +22,17 @@ export default function FounderSection({ onVideo }) {
 
           <div className="mt-6 md:mt-8 xl:mt-10 max-w-5xl mx-auto">
             <div
-              className="rounded-2xl h-[35rem] overflow-hidden cursor-pointer relative group shadow-2xl"
+              className="rounded-2xl h-[32rem] overflow-hidden cursor-pointer relative group shadow-2xl"
               onClick={onVideo}
             >
               <img
-                src="https://img.youtube.com/vi/sm4mhkJq5TE/hqdefault.jpg"
+                src={PitchImage}
                 alt="Utiva Pitch at Techstars"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.target.src = "https://img.youtube.com/vi/sm4mhkJq5TE/mqdefault.jpg";
-                }}
               />
-              <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/30 transition-colors flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                  <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
