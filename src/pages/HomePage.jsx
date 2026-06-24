@@ -17,7 +17,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <Navbar onInvest={() => setModal("subscribe")} />
       <main className="flex-1">
         <Hero
           onBooking={() => setModal("booking")}
