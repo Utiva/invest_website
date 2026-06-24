@@ -15,7 +15,7 @@ export default function TrustSection() {
     <section className="pt-16 lg:pt-20 xl:pt-24 pb-8" id="traction">
       <div className="container mx-auto px-4 w-full lg:w-11/12 xl:w-10/12">
         <p className="text-center text-black font-bold text-xs uppercase tracking-widest mb-10 lg:mb-12">
-          Trusted by high-growth companies and global talent
+          Trusted by high-growth companies and global partners
         </p>
 
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
