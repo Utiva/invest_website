@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/utivacolored.svg";
 
-export default function Navbar() {
+export default function Navbar({ onInvest }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,12 +23,12 @@ export default function Navbar() {
             <img src={logo} alt="Utiva" className="h-9 w-auto" />
           </a>
 
-          <a
-            href="#invest"
+          <button
+            onClick={onInvest}
             className="bg-primary text-white px-7 py-3 rounded-lg text-base font-semibold hover:bg-primary-dark transition-colors"
           >
             Invest With Us
-          </a>
+          </button>
         </div>
       </div>
     </nav>

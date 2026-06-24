@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
+import SubscribeModal from "../components/SubscribeModal";
 
 export default function DemoPage() {
+  const [showSubscribe, setShowSubscribe] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#FBFBE6] flex flex-col">
-      <Navbar />
+      <Navbar onInvest={() => setShowSubscribe(true)} />
       <div className="flex-1 flex flex-col items-center justify-center px-4 pt-20 py-16">
         <div className="w-full max-w-5xl mx-auto">
           <p className="text-secondary font-semibold text-xs uppercase tracking-widest mb-4 text-center">
@@ -31,6 +35,8 @@ export default function DemoPage() {
           </div>
         </div>
       </div>
+
+      {showSubscribe && <SubscribeModal onClose={() => setShowSubscribe(false)} />}
     </div>
   );
 }
