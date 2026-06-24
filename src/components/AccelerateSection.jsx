@@ -56,7 +56,7 @@ const AccelerateSection = ({ url }) => {
               <CardText
                 className={"bg-[#03CF74]"}
                 title={"350+"}
-                subTitle="Trusted By Companies in the Global North"
+                subTitle="Backed By Companies in the Global North"
               />
               <CardImage image={AccImage2} />
             </div>
