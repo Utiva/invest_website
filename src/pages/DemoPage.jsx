@@ -25,7 +25,7 @@ export default function DemoPage() {
           <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
               style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://www.youtube-nocookie.com/embed/pLXCTyUbqCw?rel=0&modestbranding=1&iv_load_policy=3"
+              src="https://www.youtube.com/embed/dSugXydAK7o?si=k0eqQTjlKi7y5VGz"
               title="Utiva Platform Walkthrough for Employers and Talent"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
